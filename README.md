@@ -14,8 +14,6 @@
 
 프로세서는 크게 데이터패스(Datapath)와 제어 장치(Control Unit)로 구성됩니다. 모든 구성 요소는 하나의 클럭 사이클 내에서 동작하며, 제어 장치가 명령어의 Opcode를 기반으로 모든 데이터패스 요소의 동작을 제어합니다.
 
-**[Microarchitecture Block Diagram Image (예시: Datapath & Control Unit 연결도)]**
-
 ### 1\. 명령어 지원 범위 (Supported Instructions)
 
 | 타입 | 명령어 (예시) | 역할 |
