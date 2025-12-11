@@ -57,14 +57,6 @@ RTL 코드는 RISC-V 프로세서의 표준 구성 요소를 기반으로 모듈
 2.  Testbench Run: 클럭을 인가하고 리셋을 해제하여 CPU 동작을 시작합니다.
 3.  Verification: 시뮬레이션 후, GPR(General Purpose Registers) 값과 Data Memory의 최종 상태를 예상 결과와 비교하여 명령어 실행의 정확성을 검증합니다.
 
-<!-- end list -->
-
-```bash
-# 시뮬레이션 예시 (ModelSim/QuestaSim 기준)
-vlog *.sv -sv 
-vsim rv32i_tb
-run -all
-```
 
 ## 💡 학습 성과 및 가치 (Key Achievements)
 
