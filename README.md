@@ -19,7 +19,7 @@
 | 타입 | 명령어 (예시) | 역할 |
 | :--- | :--- | :--- |
 | R-Type | ADD, SUB, XOR, OR, AND, SLL, SRL, SRA, SLT, SLTU | 레지스터 간 산술 및 논리 연산 |
-| I-Type | ADDI, LW, LH, LB, JALR | 즉치값(Immediate)을 포함한 연산 및 메모리 Load, 점프 |
+| I-Type | ADDI, LW, LH, LB, JALR | 즉시값(Immediate)을 포함한 연산 및 메모리 Load, 점프 |
 | S-Type | SW, SH, SB | 메모리 Store 연산 |
 | B-Type | BEQ, BNE, BLT, BGE, BLTU, BGEU | 조건부 분기(Branch) |
 | U-Type | LUI, AUIPC | 상위 20비트 즉치값 로드 |
