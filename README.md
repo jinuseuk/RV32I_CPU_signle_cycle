@@ -49,16 +49,16 @@ RTL 코드는 RISC-V 프로세서의 표준 구성 요소를 기반으로 모듈
 
 ### 2\. 시뮬레이션 환경
 
-프로젝트의 기능을 검증하기 위해 별도의 테스트벤치(`rv32i_tb.sv` 추정)가 사용됩니다.
+프로젝트의 기능을 검증하기 위해 별도의 테스트벤치가 사용됩니다.
 
 1.  Instruction Loading: RISC-V 어셈블리 코드를 컴파일하여 생성된 `.hex` 또는 `.dat` 파일을 `IMem`에 로드합니다.
 2.  Testbench Run: 클럭을 인가하고 리셋을 해제하여 CPU 동작을 시작합니다.
-3.  Verification: 시뮬레이션 후, GPR(General Purpose Registers) 값과 Data Memory의 최종 상태를 예상 결과와 비교하여 명령어 실행의 정확성을 검증합니다.
+3.  Verification: 시뮬레이션 후, Data Memory의 최종 상태를 예상 결과와 비교하여 명령어 실행의 정확성을 검증합니다.
 
 
 ## 💡 학습 성과 및 가치 (Key Achievements)
 
-  * 프로세서 구조 이해:Von Neumann/Harvard 아키텍처 및 싱글 사이클 디자인의 장단점을 직접 구현하며 체득.
+  * 프로세서 구조 이해:Harvard 아키텍처 및 싱글 사이클 디자인의 장단점을 직접 구현하며 체득.
   * ISA 디코딩 마스터: 복잡한 RISC-V 명령어 포맷(R, I, S, B, U, J-Type)을 분석하고, 이를 제어 신호로 변환하는 Control Unit 설계 역량 확보.
   * HDL 설계 능력: SystemVerilog를 사용하여 32비트 연산 및 데이터 경로를 포함하는 대규모 디지털 시스템을 모듈화하고 통합하는 능력 검증.
   * 디버깅 경험: PC 업데이트 오류, Branch/Jump 주소 계산 오류 등 CPU 설계 과정에서 발생하는 복잡한 타이밍 및 논리 오류를 디버깅하여 하드웨어 안정성 확보.
